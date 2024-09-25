@@ -26,7 +26,7 @@ jobs:
 
   deploy:
     needs: build
-    runs-on: [aws]
+    runs-on: [aws-e]
     steps:
       - name: Pull Image from docker hub
         run: sudo docker pull aishwaryak15/spring-wine-park:latest
